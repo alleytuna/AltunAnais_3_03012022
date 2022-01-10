@@ -1,0 +1,39 @@
+/* classes:
+- billboard
+- billboard__location
+- fa-map-marker
+- search field
+- billboard__presentation
+- h1
+- light-subtitle
+- purple-button
+- overall-functioning
+- h2
+- round-number
+- fa-mobile
+- small-bold-text
+- restaurants-list
+- h3
+- fa-heart
+- footer */
+
+
+/* $heading-shadow-size: 0.55rem;
+@mixin heading-shadow($colour: $colour-primary, $shadow-size: $heading-shadow-size) {
+    text-shadow: $shadow-size .55rem $colour;
+} 
+@mixin .typography {
+  font-size: 16px;
+  colour: $primary-colour;
+}
+*/
+
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+$title_font: Shrikhand;
+$standard_font: Roboto;
+
+.billboard {
+  &__location
+}
