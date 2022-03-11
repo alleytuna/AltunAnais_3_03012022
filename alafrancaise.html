@@ -1,11 +1,6 @@
-<!-- comment mettre image en dessous sans absolute (fait buguer le footer)
-- pas de border radius en bas
-- ombre portée article
-padding / margin à revoir
-- police à respecter
-- bouton de redirection dans header vers page d'accueil avec fleche
-- rebond check fa
-- juste un mailto pour la case contact
+<!--
+- norme wwc
+- text-overflow: ellipsis
 -->
 
 <!DOCTYPE html>
@@ -15,149 +10,159 @@ padding / margin à revoir
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Oh my food</title>
   </head>
 
   <body>
     <header>
+      <a class="fa fa-arrow-left" href="index.html" aria-hidden="true"></a>
       <img src="src/images/logo/ohmyfood.png" alt="ohmyfood">
     </header>
     <div class="menu-and-image">
       <img src="src/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="menu-image" alt="plat à la française">
       <div class="menu">
         <span class="menu__title">
-          <h1>A la française</h1>
+          <h1>À la française</h1>
           <i class="fa fa-heart-o" aria-hidden="true"></i>
         </span>
-        <span class="menu__category">
+        <span class="starters">
           <span class="menu__subtitle">
-            <h3>ENTREES</h3>
+            <h3>ENTRÉES</h3>
             <span> ____ </span>
           </span>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Tartare de poulpe acidulé</h3>
-              <span class="subtext">
-                <h4>Aux zestes d'orange</h4>
-                <h5>25€</h5>
+          <span class="menu__allstarters">
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Tartare de poulpe acidulé</h3>
+                <span class="subtext">
+                  <h4>Aux zestes d'orange</h4>
+                  <h5>25€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Velouté de légumes d'antan</h3>
-              <span class="subtext">
-                <h4>Carottes, panais, topinambour</h4>
-                <h5>35€</h5>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Soupe à l'oignon</h3>
-              <span class="subtext">
-                <h4>Revisitée</h4>
-                <h5>20€</h5>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Velouté de légumes d'antan</h3>
+                <span class="subtext">
+                  <h4>Carottes, panais, topinambour</h4>
+                  <h5>35€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Soupe à l'oignon</h3>
+                <span class="subtext">
+                  <h4>Revisitée</h4>
+                  <h5>20€</h5>
+                </span>
+              </span>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+          </span>
         </span>
-        <span class="menu__category">
+        <span class="mainDishes">
           <span class="menu__subtitle">
             <h3>PLATS</h3>
             <span> ____ </span>
           </span>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Coquilles Saint-Jacques</h3>
-              <span class="subtext">
-                <h4>Accompagnés d'une purée de panais</h4>
-                <h5>40€</h5>
+          <span class="menu__allmain">
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Coquilles Saint-Jacques</h3>
+                <span class="subtext">
+                  <h4>Accompagnés d'une purée de panais</h4>
+                  <h5>40€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Magret de canard</h3>
-              <span class="subtext">
-                <h4>Et parmentier de pommes de terre</h4>
-                <h5>35€</h5>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-              <span class="subtext">
-                <h4>Sur son lit de gnocchis aux légumes</h4>
-                <h5>44€</h5>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Magret de canard</h3>
+                <span class="subtext">
+                  <h4>Et parmentier de pommes de terre</h4>
+                  <h5>35€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                <span class="subtext">
+                  <h4>Sur son lit de gnocchis aux légumes</h4>
+                  <h5>44€</h5>
+                </span>
+              </span>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+          </span>
         </span>
-        <span class="menu__category">
+        <span class="desserts">
           <span class="menu__subtitle">
             <h3>DESSERTS</h3>
             <span> ____ </span>
           </span>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Pétales de violettes glacés</h3>
-              <span class="subtext">
-                <h4>Et purée de noisettes</h4>
-                <h5>18€</h5>
+          <span class="menu__alldesserts">
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Pétales de violettes glacés</h3>
+                <span class="subtext">
+                  <h4>Et purée de noisettes</h4>
+                  <h5>18€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Fondant au chocolat</h3>
-              <span class="subtext">
-                <h4>Revisité</h4>
-                <h5>22€</h5>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
-          <article class="article">
-            <span class="article__dishes">
-              <h3>Millefeuille croustillant</h3>
-              <span class="subtext">
-                <h4>Myrtilles et pâte d'amande</h4>
-                <h5>23€</h5>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Fondant au chocolat</h3>
+                <span class="subtext">
+                  <h4>Revisité</h4>
+                  <h5>22€</h5>
+                </span>
               </span>
-            </span>
-            <span class="check-case">
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-            </span>
-          </article>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+            <article class="article">
+              <span class="article__dishes">
+                <h3>Millefeuille croustillant</h3>
+                <span class="subtext">
+                  <h4>Myrtilles et pâte d'amande</h4>
+                  <h5>23€</h5>
+                </span>
+              </span>
+              <span class="check-case">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+              </span>
+            </article>
+          </span>
         </span>
-        <button class="purple-button">Commander</button>
+        <span class="button-class">
+          <button class="purple-button">Commander</button>
+        </span>
       </div>
     </div>
     <footer class="footer">
@@ -171,6 +176,6 @@ padding / margin à revoir
         <span>Devenir partenaire</span>
       </span>
       <span class="footer__iconText">Mentions légales</span>
-      <span class="footer__iconText">Contact</span>
+      <a href="mailto:someone@yoursite.com" class="footer__iconText">Contact</a>
     </footer>
   </body>

@@ -1,24 +1,15 @@
 
 /* ./dart-sass/sass sass/style.scss style.css --watch  */
 
-
-/* $heading-shadow-size: 0.55rem;
-@mixin heading-shadow($colour: $colour-primary, $shadow-size: $heading-shadow-size) {
-    text-shadow: $shadow-size .55rem $colour;
-} 
-@mixin .typography {
-  font-size: 16px;
-  colour: $primary-colour;
-}
-*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-background: #F5F4F4; 
-$colour-shadow: rgb(125, 125, 125);
-$title_font: Shrikhand;
-$font_standard: Roboto;
+$colour-shadow: #cccccc;
+$title_font: 'Shrikhand', cursive;
+$font_standard: 'Roboto';
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -42,17 +33,17 @@ body {
   left: 0;
   z-index: 1000;
   background-color: #F5F4F4;
-  animation: loaderbackground 5s forwards;
+  animation: loaderbackground 10s forwards;
 }
 
 svg {
   width: 200px;
   fill: none;
-  animation: loaderbackground 3s forwards;
+  animation: loaderbackground 10s forwards;
 }
 
 .load {
-  transform-origin: 50% 50%;
+  transform-origin: 50%;
   stroke-dasharray: 570;
   stroke-width: 20px;
   &.one {
@@ -102,6 +93,34 @@ svg {
   }
 }
 
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 570;
+  }
+  30% {
+    stroke-dashoffset: 530;
+  }
+  90% {
+    stroke-dashoffset: 570;
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes loaderbackground {
+  0% {
+    opacity: 100%;
+    z-index: 1000;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
+    z-index: -999;
+  }
+}
+
 /* éléments récurrents */
 
 h1 {
@@ -138,12 +157,19 @@ body {
 header {
   width: 100%;
   padding: 10px 0px;
+  display: flex;
+  align-items: center;
   img {
-    display: block;
     width: 150px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    }
+    a {
+      margin-left: 25px;
+      color: rgb(43, 42, 42);
+      text-decoration: none;
+      position: absolute;
     }
 }
 
@@ -247,17 +273,24 @@ header {
     border-radius: 15px;
     box-shadow: 3px 3px 10px $colour-shadow;
     margin-bottom: 20px;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 
   .newtag {
-    position: absolute;
+    position: relative;
     background-color: $colour-tertiary;
-    padding: 10px;
+    padding: 7px;
     font-size: 13px;
     font-weight: bold;
-    color: rgb(48, 172, 103);
+    color: rgb(33, 126, 75);
     margin-top: -300px;
-    margin-left: 10px;
+    float: right;
+    margin-right: 10px;
   }
 
   img {
@@ -287,14 +320,14 @@ header {
     transition: transform 1000ms linear;
 
     &:hover::before {
-      -webkit-animation-name: fadeInOpacity;
-	        animation-name: fadeInOpacity;
+      -webkit-animation-name: fadeColorHeart;
+	      animation-name: fadeColorHeart;
 	    -webkit-animation-iteration-count: 1;
-	        animation-iteration-count: 1;
+	      animation-iteration-count: 1;
 	    -webkit-animation-timing-function: ease-in;
-	        animation-timing-function: ease-in;
+	      animation-timing-function: ease-in;
 	    -webkit-animation-duration: 0.7s;
-	        animation-duration: 0.7s;
+	      animation-duration: 0.7s;
       content: "\f004";
       background: radial-gradient(circle at 30% 107%, $colour-primary, $colour-secondary);
       -webkit-background-clip: text;
@@ -302,8 +335,8 @@ header {
       -webkit-text-fill-color: transparent;
       cursor: pointer;
     }
-
-    @-webkit-keyframes fadeInOpacity {
+    
+    @keyframes fadeColorHeart {
       0% {
         opacity: 0.2;
       }
@@ -311,8 +344,8 @@ header {
         opacity: 1;
       }
     }
-    
-    @keyframes fadeInOpacity {
+
+    @-webkit-keyframes fadeColorHeart {
       0% {
         opacity: 0.2;
       }
@@ -345,6 +378,11 @@ header {
     filter: invert(100%);
     font-style: white;
     margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  a {
+    color: black;
   }
 
   .fa {
@@ -363,9 +401,12 @@ header {
   margin-top: -70px;
   position: relative;
   padding-top: 20px;
+  align-items: center;
 
   h1 {
     padding-left: 20px;
+    font-family: $title_font;
+    font-weight: lighter;
   }
 
   &__title {
@@ -383,8 +424,8 @@ header {
     padding-right: 20px;
 
     &:hover::before {
-      -webkit-animation-name: fadeInOpacity;
-	        animation-name: fadeInOpacity;
+      -webkit-animation-name: fadeColorHeart;
+	        animation-name: fadeColorHeart;
 	    -webkit-animation-iteration-count: 1;
 	        animation-iteration-count: 1;
 	    -webkit-animation-timing-function: ease-in;
@@ -399,7 +440,7 @@ header {
       cursor: pointer;
     }
 
-    @-webkit-keyframes fadeInOpacity {
+    @-webkit-keyframes fadeColorHeart {
       0% {
         opacity: 0.2;
       }
@@ -408,7 +449,7 @@ header {
       }
     }
     
-    @keyframes fadeInOpacity {
+    @keyframes fadeColorHeart {
       0% {
         opacity: 0.2;
       }
@@ -434,6 +475,102 @@ header {
     }
   }
 
+  .starters {
+    display: block;
+    -webkit-animation-name: progressiveAppear;
+	    animation-name: progressiveAppear;
+      -webkit-animation-duration: 0.7s;
+	    animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+
+      @keyframes progressiveAppear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes progressiveAppear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .mainDishes {
+    display: block;
+    -webkit-animation-name: progressiveAppear;
+	    animation-name: progressiveAppear;
+      -webkit-animation-duration: 2s;
+	    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+
+      @keyframes progressiveAppear {
+        0% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    
+      @-webkit-keyframes progressiveAppear {
+      0% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .desserts {
+    display: block;
+    -webkit-animation-name: progressiveAppear;
+	    animation-name: progressiveAppear;
+      -webkit-animation-duration: 3.5s;
+	    animation-duration: 3.5s;
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+
+      @keyframes progressiveAppear {
+        0% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes progressiveAppear {
+      0% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
   .article {
     display: flex;
     background-color: white;
@@ -441,11 +578,12 @@ header {
     padding-left: 10px;
     margin: 20px;
     height: 63px;
+    box-shadow: 1px 1px 10px $colour-shadow;
     cursor: pointer;
 
     &:hover {
       .check-case {
-        display: flex;
+        display: inline-block;
         background-color: #99E2D0;
         width: 60px;
         padding-top: 22px;
@@ -490,22 +628,54 @@ header {
     font-size: 20px;
     padding-left: 17px;
     color: #F5F4F4;
-  }
+    -webkit-animation-name: rotating;
+	    animation-name: rotating;
+	  -webkit-animation-duration: 0.5s;
+	    animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
 
-  button {
-    margin-left: 40%;
-  }
+    @keyframes rotating {
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes rotating {
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .button-class {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
 }
 
 @media screen and (min-width: 750px) {
-  
+
   .functioning {
+
+    &__allarticles {
+      display: block;
+      text-align: center;
+    }
 
     &__article {
       display: inline-flex;
-      width: 30.3%;
+      width: 30%;
       height: 50px;
-      margin-right: 13.9px;
+      margin-right: 14px;
+      text-align: left;
     }
 
     &__number {
@@ -530,27 +700,45 @@ header {
 
   .restaurants {
 
+    &__allrestaurants {
+      display: block;
+      text-align: center;
+    }
+
     &__article {
       display: inline-block;
       width: 47%;
       margin-left: 15px;
     }
   }
+
+  .menu {
+
+    &__allstarters {
+      display: block;
+      text-align: center;
+    }
+
+    &__allmain {
+      display: block;
+      text-align: center;
+    }
+
+    &__alldesserts {
+      display: block;
+      text-align: center;
+    }
+
+    .article {
+      display: inline-flex;
+      width: 30%;
+      margin: 5px;
+      text-align: left;
+    }
+
+    .purple-button {
+      margin-top: 20px;
+    }
+  }
+
 }
-
-
-/*
-imbrication
-
-
-
-  .btn {
-    &:hover {
-
-heritage : 
-
-.call-to-action {
-  @extend .btn {
-
-    call to action prendra exactement les mêmes settings que btn
-} */

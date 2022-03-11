@@ -2,7 +2,6 @@
 - nouveau etiquette : span avec display: position relative top bottom et left right 
 accueil : 
 - au clic sur les articles, le lien vers le menu
-- au clic sur footer contact, lien vers mail
 - justify-content newtag end
 -->
 
@@ -14,7 +13,7 @@ accueil :
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Oh my food</title>
   </head>
@@ -46,58 +45,64 @@ accueil :
       </div>
       <div class="functioning">
         <h2>Fonctionnement</h2>
-        <article class="functioning__article">
-          <span class="functioning__number">1</span>
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <span class="functioning__case">Choisissez un restaurant</span>
-        </article>
-        <article class="functioning__article">
-          <span class="functioning__number">2</span>
-          <i class="fa fa-list" aria-hidden="true"></i>
-          <span class="functioning__case">Composez votre menu</span>
-        </article>
-        <article class="functioning__article">
-          <span class="functioning__number">3</span>
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
-          <span class="functioning__case">Dégustez au restaurant</span>
-        </article>
+        <span class="functioning__allarticles">
+          <article class="functioning__article">
+            <span class="functioning__number">1</span>
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <span class="functioning__case">Choisissez un restaurant</span>
+          </article>
+          <article class="functioning__article">
+            <span class="functioning__number">2</span>
+            <i class="fa fa-list" aria-hidden="true"></i>
+            <span class="functioning__case">Composez votre menu</span>
+          </article>
+          <article class="functioning__article">
+            <span class="functioning__number">3</span>
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <span class="functioning__case">Dégustez au restaurant</span>
+          </article>
+        </span>
       </div>
       <div class="restaurants">
         <h2>Restaurants</h2>
-        <article class="restaurants__article">
-          <img src="src/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gout">
-          <span class="restaurants__text">
-            <h3>La palette du goût</h3>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </span>
-          <h4>Ménilmontant</h4>
-          <span class="newtag">Nouveau</span>
-        </article>
-        <article class="restaurants__article">
-          <img src="src/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="à la française">
-          <span class="restaurants__text">
-            <h3>La note enchantée</h3>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </span>
-          <h4>Charonne</h4>
-          <span class="newtag">Nouveau</span>
-        </article>
-        <article class="restaurants__article">
-          <img src="src/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="la palette du gout">
-          <span class="restaurants__text">
-            <h3>A la française</h3>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </span>
-          <h4>Cité Rouge</h4>
-        </article>
-        <article class="restaurants__article">
-          <img src="src/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
-          <span class="restaurants__text">
-            <h3>Le délice des sens</h3>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </span>
-          <h4>Folie-Méricourt</h4>
-        </article>
+        <span class="restaurants__allrestaurants">
+          <article class="restaurants__article">
+            <img src="src/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gout">
+            <span class="restaurants__text">
+              <h3>La palette du goût</h3>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </span>
+            <h4>Ménilmontant</h4>
+            <span class="newtag">Nouveau</span>
+          </article>
+          <article class="restaurants__article">
+            <img src="src/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="à la française">
+            <span class="restaurants__text">
+              <h3>La note enchantée</h3>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </span>
+            <h4>Charonne</h4>
+            <span class="newtag">Nouveau</span>
+          </article>
+          <article class="restaurants__article">
+            <a href="alafrancaise.html">
+              <img src="src/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="la palette du gout">
+            </a>
+            <span class="restaurants__text">
+              <h3>A la française</h3>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </span>
+            <h4>Cité Rouge</h4>
+          </article>
+          <article class="restaurants__article">
+            <img src="src/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
+            <span class="restaurants__text">
+              <h3>Le délice des sens</h3>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </span>
+            <h4>Folie-Méricourt</h4>
+          </article>
+        </span>
       </div>
       <footer class="footer">
         <img src="src/images/logo/ohmyfood.png" alt="ohmyfood logo" class="footer__logo">
@@ -110,7 +115,7 @@ accueil :
           <span>Devenir partenaire</span>
         </span>
         <span class="footer__iconText">Mentions légales</span>
-        <span class="footer__iconText">Contact</span>
+        <a href="mailto:someone@yoursite.com" class="footer__iconText">Contact</a>
       </footer>
     </div>
   </body>
