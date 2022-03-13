@@ -115,13 +115,13 @@ h2 {
 }
 
 .purple-button {
-  display: flexbox;
+  width: 180px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 25px;
   color: white;
   padding: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   box-shadow: 3px 3px 10px #cccccc;
   cursor: pointer;
 }
@@ -172,10 +172,11 @@ header a {
   font-weight: bolder;
 }
 .billboard__presentation {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   background-color: #F5F4F4;
   padding: 10px 30px 10px 30px;
+  align-items: center;
 }
 .billboard .light-subtitle {
   font-weight: lighter;
@@ -334,7 +335,6 @@ header a {
 }
 .footer__iconText {
   filter: invert(100%);
-  font-style: white;
   margin-bottom: 8px;
   text-decoration: none;
 }
@@ -352,10 +352,11 @@ header a {
 .menu {
   width: 100%;
   background-color: #F5F4F4;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   margin-top: -70px;
   position: relative;
   padding-top: 20px;
+  padding-bottom: 10px;
   align-items: center;
 }
 .menu h1 {
@@ -523,7 +524,7 @@ header a {
   background-color: #99E2D0;
   width: 60px;
   padding-top: 22px;
-  border-radius: 0% 20% 20% 0%;
+  border-radius: 0px 17px 17px 0%;
 }
 .menu .article__dishes {
   width: 100%;
@@ -579,12 +580,15 @@ header a {
   }
 }
 .menu .button-class {
-  width: 100%;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .purple-button {
+  width: 130px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .functioning__allarticles {
     display: block;
     text-align: center;
@@ -595,21 +599,11 @@ header a {
     height: 50px;
     margin-right: 14px;
     text-align: left;
+    align-items: center;
   }
   .functioning__number {
     background-color: #9356DC;
     padding: 6px;
-    margin-top: 13px;
-  }
-  .functioning__case {
-    margin-top: 16px;
-    margin-right: 10px;
-  }
-  .functioning .fa {
-    margin-top: 18px;
-  }
-  .functioning .fa-mobile {
-    margin-top: 12px;
   }
 
   .restaurants__allrestaurants {
@@ -639,9 +633,39 @@ header a {
     width: 30%;
     margin: 5px;
     text-align: left;
+    height: 100px;
+  }
+  .menu .article .check-case {
+    height: 78px;
+  }
+  .menu .article .fa-check-circle {
+    margin-top: 20px;
+  }
+  .menu .article h3 {
+    font-size: 16px;
+  }
+  .menu .article h4 {
+    font-size: 13px;
+  }
+  .menu .article h5 {
+    font-size: 14px;
+  }
+  .menu .article .subtext {
+    padding-top: 15px;
   }
   .menu .purple-button {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .article h3 {
+    font-size: 19px;
+  }
+  .menu .article h4 {
+    font-size: 17px;
+  }
+  .menu .article h5 {
+    font-size: 17px;
   }
 }
 
