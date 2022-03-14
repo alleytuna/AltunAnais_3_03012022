@@ -79,32 +79,6 @@ svg {
     z-index: -999;
   }
 }
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 570;
-  }
-  30% {
-    stroke-dashoffset: 530;
-  }
-  90% {
-    stroke-dashoffset: 570;
-    transform: rotate(360deg);
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-@-webkit-keyframes loaderbackground {
-  0% {
-    opacity: 100%;
-    z-index: 1000;
-  }
-  100% {
-    opacity: 0%;
-    display: none;
-    z-index: -999;
-  }
-}
 /* éléments récurrents */
 h1 {
   font-size: 22px;
@@ -308,14 +282,6 @@ header a {
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeColorHeart {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .restaurants h4 {
   margin-top: -13px;
   padding-left: 14px;
@@ -395,14 +361,6 @@ header a {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
-@-webkit-keyframes fadeColorHeart {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fadeColorHeart {
   0% {
     opacity: 0.2;
@@ -441,14 +399,6 @@ header a {
     opacity: 1;
   }
 }
-@-webkit-keyframes progressiveAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .menu .mainDishes {
   display: block;
   -webkit-animation-name: progressiveAppear;
@@ -469,38 +419,16 @@ header a {
     opacity: 1;
   }
 }
-@-webkit-keyframes progressiveAppear {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .menu .desserts {
   display: block;
-  -webkit-animation-name: progressiveAppear;
   animation-name: progressiveAppear;
-  -webkit-animation-duration: 3.5s;
+  animation-name: progressiveAppear;
   animation-duration: 3.5s;
-  -webkit-animation-timing-function: ease-in;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
 @keyframes progressiveAppear {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes progressiveAppear {
   0% {
     opacity: 0;
   }
@@ -574,14 +502,6 @@ header a {
   animation-timing-function: ease-in;
 }
 @keyframes rotating {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rotating {
   50% {
     transform: rotate(180deg);
   }

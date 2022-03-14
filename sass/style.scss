@@ -93,34 +93,6 @@ svg {
   }
 }
 
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 570;
-  }
-  30% {
-    stroke-dashoffset: 530;
-  }
-  90% {
-    stroke-dashoffset: 570;
-    transform: rotate(360deg);
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-@-webkit-keyframes loaderbackground {
-  0% {
-    opacity: 100%;
-    z-index: 1000;
-  }
-  100% {
-    opacity: 0%;
-    display: none;
-    z-index: -999;
-  }
-}
-
 /* éléments récurrents */
 
 h1 {
@@ -345,15 +317,6 @@ header {
         opacity: 1;
       }
     }
-
-    @-webkit-keyframes fadeColorHeart {
-      0% {
-        opacity: 0.2;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   }
 
   h4 {
@@ -442,15 +405,6 @@ header {
       -webkit-text-fill-color: transparent;
       cursor: pointer;
     }
-
-    @-webkit-keyframes fadeColorHeart {
-      0% {
-        opacity: 0.2;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
     
     @keyframes fadeColorHeart {
       0% {
@@ -482,7 +436,7 @@ header {
     display: block;
     -webkit-animation-name: progressiveAppear;
 	    animation-name: progressiveAppear;
-      -webkit-animation-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
 	    animation-duration: 0.7s;
     -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
@@ -494,15 +448,6 @@ header {
         100% {
           opacity: 1;
         }
-      }
-
-      @-webkit-keyframes progressiveAppear {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
     }
   }
 
@@ -526,27 +471,15 @@ header {
           opacity: 1;
         }
       }
-    
-      @-webkit-keyframes progressiveAppear {
-      0% {
-        opacity: 0;
-      }
-      80% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   }
 
   .desserts {
     display: block;
-    -webkit-animation-name: progressiveAppear;
+    animation-name: progressiveAppear;
 	    animation-name: progressiveAppear;
-      -webkit-animation-duration: 3.5s;
+      animation-duration: 3.5s;
 	    animation-duration: 3.5s;
-    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
       animation-timing-function: ease-in;
 
       @keyframes progressiveAppear {
@@ -560,18 +493,6 @@ header {
           opacity: 1;
         }
       }
-
-      @-webkit-keyframes progressiveAppear {
-      0% {
-        opacity: 0;
-      }
-      80% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   }
 
   .article {
@@ -648,15 +569,6 @@ header {
     }
 
     @keyframes rotating {
-      50% {
-        transform: rotate(180deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    @-webkit-keyframes rotating {
       50% {
         transform: rotate(180deg);
       }
