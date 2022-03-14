@@ -293,20 +293,16 @@ header {
     transition: transform 1000ms linear;
 
     &:hover::before {
-      -webkit-animation-name: fadeColorHeart;
-	      animation-name: fadeColorHeart;
-	    -webkit-animation-iteration-count: 1;
-	      animation-iteration-count: 1;
-	    -webkit-animation-timing-function: ease-in;
-	      animation-timing-function: ease-in;
-	    -webkit-animation-duration: 0.7s;
-	      animation-duration: 0.7s;
-      content: "\f004";
-      background: radial-gradient(circle at 30% 107%, $colour-primary, $colour-secondary);
-      -webkit-background-clip: text;
-              background-clip: text;
-      -webkit-text-fill-color: transparent;
-      cursor: pointer;
+	  animation-name: fadeColorHeart;
+	  animation-iteration-count: 1;
+	  animation-timing-function: ease-in;
+	  animation-duration: 0.7s;
+    content: "\f004";
+    background: radial-gradient(circle at 30% 107%, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
     }
     
     @keyframes fadeColorHeart {
@@ -390,20 +386,16 @@ header {
     padding-right: 20px;
 
     &:hover::before {
-      -webkit-animation-name: fadeColorHeart;
-	        animation-name: fadeColorHeart;
-	    -webkit-animation-iteration-count: 1;
-	        animation-iteration-count: 1;
-	    -webkit-animation-timing-function: ease-in;
-	        animation-timing-function: ease-in;
-	    -webkit-animation-duration: 0.7s;
-	        animation-duration: 0.7s;
-      content: "\f004";
-      background: radial-gradient(circle at 30% 107%, $colour-primary, $colour-secondary);
-      -webkit-background-clip: text;
-              background-clip: text;
-      -webkit-text-fill-color: transparent;
-      cursor: pointer;
+	  animation-name: fadeColorHeart;
+	  animation-iteration-count: 1;
+	  animation-timing-function: ease-in;
+	  animation-duration: 0.7s;
+    content: "\f004";
+    background: radial-gradient(circle at 30% 107%, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
     }
     
     @keyframes fadeColorHeart {
@@ -434,12 +426,9 @@ header {
 
   .starters {
     display: block;
-    -webkit-animation-name: progressiveAppear;
-	    animation-name: progressiveAppear;
-    -webkit-animation-duration: 0.7s;
-	    animation-duration: 0.7s;
-    -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
+	  animation-name: progressiveAppear;
+	  animation-duration: 0.7s;
+    animation-timing-function: ease-in;
 
       @keyframes progressiveAppear {
         0% {
@@ -453,12 +442,9 @@ header {
 
   .mainDishes {
     display: block;
-    -webkit-animation-name: progressiveAppear;
-	    animation-name: progressiveAppear;
-      -webkit-animation-duration: 2s;
-	    animation-duration: 2s;
-    -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
+	  animation-name: progressiveAppear;
+	  animation-duration: 2s;
+    animation-timing-function: ease-in;
 
       @keyframes progressiveAppear {
         0% {
@@ -476,11 +462,8 @@ header {
   .desserts {
     display: block;
     animation-name: progressiveAppear;
-	    animation-name: progressiveAppear;
-      animation-duration: 3.5s;
-	    animation-duration: 3.5s;
+    animation-duration: 3.5s;
     animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
 
       @keyframes progressiveAppear {
         0% {
@@ -560,12 +543,9 @@ header {
     font-size: 20px;
     padding-left: 17px;
     color: #F5F4F4;
-    -webkit-animation-name: rotating;
-	    animation-name: rotating;
-	  -webkit-animation-duration: 0.5s;
-	    animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
+    animation-name: rotating;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     }
 
     @keyframes rotating {
