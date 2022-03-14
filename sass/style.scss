@@ -697,7 +697,7 @@ header {
     &__number {
     background-color: $colour-primary;
     padding: 6px;
-    }
+    }    
    }
 
   .restaurants {
@@ -716,27 +716,31 @@ header {
 
   .menu {
 
-    &__allstarters {
-      display: block;
-      text-align: center;
+    &__allDishes {
+      display: inline-flex;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
     }
 
-    &__allmain {
-      display: block;
-      text-align: center;
+    .starters {
+      width: 33%;
     }
 
-    &__alldesserts {
-      display: block;
-      text-align: center;
+    .mainDishes {
+      width: 33%;
+    }
+
+    .desserts {
+      width: 33%;
+    }
+
+    .subtext {
+      margin-top: -2px;
     }
 
     .article {
-      display: inline-flex;
-      width: 30%;
-      height: 70px;
-      margin: 5px;
-      text-align: left;
+      margin: 12px;
     }
 
     .purple-button {

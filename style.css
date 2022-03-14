@@ -626,24 +626,26 @@ header a {
     margin-left: 15px;
   }
 
-  .menu__allstarters {
-    display: block;
-    text-align: center;
+  .menu__allDishes {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
   }
-  .menu__allmain {
-    display: block;
-    text-align: center;
+  .menu .starters {
+    width: 33%;
   }
-  .menu__alldesserts {
-    display: block;
-    text-align: center;
+  .menu .mainDishes {
+    width: 33%;
+  }
+  .menu .desserts {
+    width: 33%;
+  }
+  .menu .subtext {
+    margin-top: -2px;
   }
   .menu .article {
-    display: inline-flex;
-    width: 30%;
-    height: 70px;
-    margin: 5px;
-    text-align: left;
+    margin: 12px;
   }
   .menu .purple-button {
     margin-top: 20px;
