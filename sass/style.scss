@@ -596,11 +596,15 @@ header {
 
     &__dishes {
       width: 100%;
+      overflow: hidden;
 
       h3 {
         margin-top: 10px;
         margin-bottom: -20px;
         font-size: 17px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .subtext {
@@ -613,10 +617,14 @@ header {
       h4 {
         font-weight: lighter;
         font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 5px;
       }
 
       h5 {
-        padding-right: 25px;
+        padding-right: 20px;
         font-size: 15px;
       }
     }
@@ -726,33 +734,9 @@ header {
     .article {
       display: inline-flex;
       width: 30%;
+      height: 70px;
       margin: 5px;
       text-align: left;
-      height: 100px;
-
-      .check-case {
-        height: 78px;
-      }
-
-      .fa-check-circle {
-        margin-top: 20px;
-      }
-
-      h3 {
-        font-size: 16px;
-      }
-
-      h4 {
-        font-size: 13px;
-      }
-
-      h5 {
-        font-size: 14px;
-      }
-
-      .subtext {
-        padding-top: 15px;
-      }
     }
 
     .purple-button {
@@ -762,6 +746,10 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .menu-image {
+    height: 500px;
+  }
 
   .menu {
     .article {
