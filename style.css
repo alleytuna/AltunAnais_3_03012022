@@ -451,12 +451,12 @@ header a {
   }
 }
 .menu .article:hover .fa-check-circle {
-  display: flex;
+  display: block;
   font-size: 20px;
-  padding-left: 17px;
   color: #F5F4F4;
+  opacity: 100%;
   animation-name: rotating;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
 }
 @keyframes rotating {
@@ -472,6 +472,7 @@ header a {
   background-color: #99E2D0;
   padding-top: 22px;
   border-radius: 0px 17px 17px 0%;
+  text-align: center;
   animation-name: progressiveDisappear;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
@@ -485,10 +486,18 @@ header a {
   }
 }
 .menu .article .fa-check-circle {
-  display: flex;
-  font-size: 20px;
-  padding-left: 17px;
+  opacity: 0%;
   color: #F5F4F4;
+  animation-name: disappearing;
+  animation-duration: 1s;
+}
+@keyframes disappearing {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 .menu .article__dishes {
   width: 100%;
