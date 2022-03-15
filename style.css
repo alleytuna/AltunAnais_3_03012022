@@ -438,6 +438,57 @@ header a {
   width: 60px;
   padding-top: 22px;
   border-radius: 0px 17px 17px 0%;
+  animation-name: progressiveWidth;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+}
+@keyframes progressiveWidth {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+.menu .article:hover .fa-check-circle {
+  display: flex;
+  font-size: 20px;
+  padding-left: 17px;
+  color: #F5F4F4;
+  animation-name: rotating;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+}
+@keyframes rotating {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.menu .article .check-case {
+  width: 0px;
+  background-color: #99E2D0;
+  padding-top: 22px;
+  border-radius: 0px 17px 17px 0%;
+  animation-name: progressiveDisappear;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+}
+@keyframes progressiveDisappear {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.menu .article .fa-check-circle {
+  display: flex;
+  font-size: 20px;
+  padding-left: 17px;
+  color: #F5F4F4;
 }
 .menu .article__dishes {
   width: 100%;
@@ -468,26 +519,6 @@ header a {
 .menu .article__dishes h5 {
   padding-right: 20px;
   font-size: 15px;
-}
-.menu .check-case {
-  display: none;
-}
-.menu .fa-check-circle {
-  display: flex;
-  font-size: 20px;
-  padding-left: 17px;
-  color: #F5F4F4;
-  animation-name: rotating;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
-}
-@keyframes rotating {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .menu .button-class {
   display: flex;
